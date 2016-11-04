@@ -1,3 +1,5 @@
+[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
+
 if [ -f "$HOME/.bash_aliases" ];
 then
        	source "$HOME/.bash_aliases"
@@ -28,13 +30,27 @@ color_my_prompt
 
 # PS1="\$(~/.rvm/bin/rvm-prompt) $PS1"
 
-
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-export GOPATH=$HOME/go
+
+# exports
+
+# HOME
+# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# export GOPATH=$HOME/go
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
+
+# UPNEXT
+# export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home"
+
+# export JRUBY_OPTS="-Xcompile.invokedynamic=false -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-noverify -Xcompile.mode=OFF"
+# export GOPATH="$HOME/gospace"
+# export PATH=$PATH:$GOPATH/bin
+
+# config dla casa
+# export JAVA_OPTS="-Dcas.config.filepath=/Users/kamilpluta/projects/dp/cas/config/appConfig.properties -Dcas.log.dirpath=/Users/kamilpluta/cas_logs/"
+
+# commented out ???
+# export CURLOPT_SSLCERT=$HOME/cert.pem
+# export CURL_CA_BUNDLE=$HOME/cert.pem

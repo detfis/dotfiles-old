@@ -7,6 +7,13 @@ else
        	echo "bash aliases file not found!"
 fi
 
+if [ -f "$HOME/.bash_custom" ];
+then
+        source "$HOME/.bash_custom"
+else
+        echo "bash custom file not found!"
+fi
+
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash

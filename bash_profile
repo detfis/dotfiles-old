@@ -1,5 +1,10 @@
 [[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
 
+# load .bashrc
+if [ -f ~/.bashrc ]; then
+   source ~/.bashrc
+fi
+
 if [ -f "$HOME/.bash_aliases" ];
 then
        	source "$HOME/.bash_aliases"

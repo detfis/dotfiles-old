@@ -19,6 +19,7 @@ else
         echo "bash custom file not found!"
 fi
 
+
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
@@ -41,12 +42,8 @@ color_my_prompt
 
 # PS1="\$(~/.rvm/bin/rvm-prompt) $PS1"
 
-
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
 
 # exports
 

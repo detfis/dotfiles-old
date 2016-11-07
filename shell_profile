@@ -12,11 +12,11 @@ else
        	echo "bash aliases file not found!"
 fi
 
-if [ -f "$HOME/.bash_custom" ];
+if [ -f "$HOME/.shell_custom" ];
 then
-        source "$HOME/.bash_custom"
+        source "$HOME/.shell_custom"
 else
-        echo "bash custom file not found!"
+        echo "shell custom file not found!"
 fi
 
 if [ -f ~/.git-completion.bash ]; then
@@ -49,12 +49,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # exports
-
-# HOME
-# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-# export GOPATH=$HOME/go
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
 
 # UPNEXT
 # export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home"

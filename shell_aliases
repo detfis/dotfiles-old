@@ -61,10 +61,11 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 
 alias chrome="/Applications/Google\\ \\Chrome.app/Contents/MacOS/Google\\ \\Chrome"
 
+# set up for bash, change it for other shells
 alias reload="source ~/.bash_profile"
 alias open_profile="vim ~/.bash_profile"
 
-alias open_aliases="vim ~/.bash_aliases"
+alias open_aliases="vim ~/.shell_aliases"
 
 # mysql
 alias mysql56start="brew services start homebrew/versions/mysql56"

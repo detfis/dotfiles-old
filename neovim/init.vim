@@ -10,7 +10,7 @@ set textwidth=120
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+nnoremap <C-M> <C-W><C-H>
 
 syntax on
 
@@ -83,7 +83,7 @@ set tm=500
 let mapleader = ','
 
 " remap esc
-inoremap jk <esc>
+" inoremap jk <esc>
 
 " wipout buffer
 nmap <silent> <leader>b :bw<cr>

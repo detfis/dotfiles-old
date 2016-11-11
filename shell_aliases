@@ -79,3 +79,6 @@ alias postgresstop="brew services stop postgresql"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
+
+# docker
+alias docker-machine-conf-shell="eval $(docker-machine env)"

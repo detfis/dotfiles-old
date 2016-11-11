@@ -77,4 +77,5 @@ alias postgresstart="brew services start postgresql"
 alias postgresrestart="brew services restart postgresql"
 alias postgresstop="brew services stop postgresql"
 
-
+# Pretty print the path
+alias path='echo $PATH | tr -s ":" "\n"'

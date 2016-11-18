@@ -20,6 +20,9 @@ Plug 'tpope/vim-repeat' " enables repeating other supported plugins with the . c
 Plug 'ervandew/supertab' " Perform all your vim insert mode completions with Tab
 Plug 'tpope/vim-sleuth' " detect indent style (tabs vs. spaces)
 Plug 'sickill/vim-pasta' " context-aware pasting
+Plug 'neomake/neomake'
+
+Plug 'sheerun/vim-polyglot' "support for tons of programming languages
 
 " html / templates
 Plug 'mattn/emmet-vim', { 'for': 'html' } " emmet support for vim - easily create markdup wth CSS-like syntax
@@ -40,4 +43,8 @@ Plug 'fatih/vim-go', { 'for': 'go' } " go support
 " elixir
 Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' } " elixir support
 Plug 'slashmili/alchemist.vim', { 'for': 'elixir' } " elixir code completion
+
+" phoenix
+Plug 'c-brenn/phoenix.vim'
+Plug 'tpope/vim-projectionist'
 call plug#end()

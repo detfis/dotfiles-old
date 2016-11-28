@@ -7,9 +7,9 @@ fi
 
 if [ -f "$HOME/.shell_aliases" ];
 then
-       	source "$HOME/.shell_aliases"
+        source "$HOME/.shell_aliases"
 else
-       	echo "shell aliases file not found!"
+        echo "shell aliases file not found!"
 fi
 
 if [ -f "$HOME/.shell_custom" ];
@@ -39,13 +39,7 @@ function color_my_prompt {
 }
 color_my_prompt
 
-# PS1="\$(~/.rvm/bin/rvm-prompt) $PS1"
-
-
-
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # exports

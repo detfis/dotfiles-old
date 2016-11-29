@@ -14,6 +14,7 @@ brew install git
 brew install tmux
 brew install z
 brew install neovim/neovim/neovim
+brew install python3
 
 brew tap homebrew/completions
 brew install homebrew/completions/mix-completion

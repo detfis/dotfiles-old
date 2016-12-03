@@ -119,6 +119,9 @@ nnoremap <silent> $ g$
 " search for word under the cursor
 nnoremap <leader>/ "fyiw :/<c-r>f<cr>
 
+" run Neomake on current file on every write
+autocmd! BufWritePost * Neomake
+
 " Toggle NERDTree
 nmap <silent> <leader>k :NERDTreeToggle<cr>
 " expand to the path of the file in the current buffer

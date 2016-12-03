@@ -1,0 +1,18 @@
+[color]
+	ui = true
+[merge]
+	tool = opendiff
+[alias]
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	ci = commit
+	co = checkout
+	br = branch
+	pushall = push —recurse-submodules=on-demand
+	st = status
+[http]
+	sslVerify = true
+[core]
+	excludesfile = /Users/kamilpluta/.gitignore_global
+[user]
+	name = Kamil Pluta
+	email = detfis@gmail.com

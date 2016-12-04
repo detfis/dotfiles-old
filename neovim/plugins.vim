@@ -22,6 +22,7 @@ Plug 'sickill/vim-pasta' " context-aware pasting
 Plug 'neomake/neomake' " neovim replacement for syntastic using neovim's job control functonality
 Plug 'sheerun/vim-polyglot' "support for tons of programming languages
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " neovim replacement for neocomplete
+Plug 'Valloric/YouCompleteMe' "code-completion engine for vim
 
 " html / templates
 Plug 'mattn/emmet-vim', { 'for': 'html' } " emmet support for vim - easily create markdup wth CSS-like syntax

@@ -159,12 +159,8 @@ au FileType go nmap <Leader>s <Plug>(go-implements)
 " Show type info for the word under your cursor
 au FileType go nmap <Leader>i <Plug>(go-info)
 
-" Open the relevant Godoc for the word under the cursor
-au FileType go nmap <Leader>gd <Plug>(go-doc)
-au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
-
-" Open the Godoc in browser
-au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
+" Open the relevant definition for the word under the cursor
+au Filetype go nnoremap <leader>v :vsp <CR>:exe "GoDef" <CR>
 
 " Run/build/test/coverage
 au FileType go nmap <leader>r <Plug>(go-run)

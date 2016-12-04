@@ -49,6 +49,7 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 export JRUBY_OPTS="-Xcompile.invokedynamic=false -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-noverify -Xcompile.mode=OFF"
 export GOPATH="$HOME/go"
+alias g='cd $GOPATH'
 export PATH=$PATH:$GOPATH/bin
 
 # config dla casa

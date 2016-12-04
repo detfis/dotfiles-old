@@ -30,6 +30,7 @@ alias ll="ls -lFh ${colorflag}"
 alias lld="ls -l | grep ^d"
 alias rmf="rm -rf"
 alias h="cd ~"
+alias dotfiles="cd $HOME/dotfiles"
 
 # Helpers
 alias grep='grep --color=auto'

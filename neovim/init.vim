@@ -5,6 +5,8 @@ let g:deoplete#enable_at_startup = 1
 " Use smartcase.
 let g:deoplete#enable_smart_case = 1
 
+let g:ycm_python_binary_path = '/usr/local/bin/python3'
+
 set nocompatible              " be iMproved, required
 set autoread                " detect when a file is changed
 

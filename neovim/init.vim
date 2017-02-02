@@ -4,12 +4,14 @@ source ~/.config/nvim/plugins.vim
 let g:deoplete#enable_at_startup = 1
 " Use smartcase.
 let g:deoplete#enable_smart_case = 1
-
+let g:ycm_server_python_interpreter = '/usr/bin/python'
 set nocompatible              " be iMproved, required
 set autoread                " detect when a file is changed
 
 set history=1000            " change history to 1000
 set textwidth=120
+
+set clipboard=unnamed
 
 " easier switch between splits
 nnoremap <C-J> <C-W><C-J>
@@ -161,6 +163,9 @@ au FileType go nmap <Leader>i <Plug>(go-info)
 
 " Open the relevant definition for the word under the cursor
 au Filetype go nnoremap <leader>v :vsp <CR>:exe "GoDef" <CR>
+
+" Rename the identifier under the cursor to a new name
+au FileType go nmap <Leader>e <Plug>(go-rename)
 
 " Run/build/test/coverage
 au FileType go nmap <leader>r <Plug>(go-run)

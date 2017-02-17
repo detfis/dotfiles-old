@@ -9,6 +9,8 @@
 	br = branch
 	pushall = push —recurse-submodules=on-demand
 	st = status
+	unstage = reset HEAD --
+	last = log -1 HEAD
 [http]
 	sslVerify = true
 [core]

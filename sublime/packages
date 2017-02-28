@@ -1,8 +1,12 @@
 AdvancedNewFile
+All Autocomplete
 AlignTab
+Babel
+Babel Snippets
 BracketHighlighter
 Clipbarod Manager
 Coffee Color Scheme
+CSS Extended Completions
 DashDoc
 Dockerfile Syntax Highlighting
 Elixir
@@ -19,6 +23,8 @@ Pretty YAML
 PyV8
 Rspec
 Sass
+SCSS
+SublimeCodeIntel
 SublimeLinter
 SublimeLinter-contrib-elixirc
 SublimeLinter-rubocop

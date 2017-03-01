@@ -67,9 +67,9 @@ alias chrome="/Applications/Google\\ \\Chrome.app/Contents/MacOS/Google\\ \\Chro
 
 # set up for bash, change it for other shells
 alias reload="source ~/.bash_profile"
-alias open_profile="vim ~/.bash_profile"
+alias open_profile="subl ~/.bash_profile"
 
-alias open_aliases="vim ~/.shell_aliases"
+alias open_aliases="subl ~/.shell_aliases"
 
 # mysql
 alias mysql56start="brew services start homebrew/versions/mysql56"
@@ -85,4 +85,4 @@ alias postgresstop="brew services stop postgresql"
 alias path='echo $PATH | tr -s ":" "\n"'
 
 # docker
-alias docker-machine-conf-shell="eval $(docker-machine env)"
+# alias docker-machine-conf-shell="eval $(docker-machine env)"

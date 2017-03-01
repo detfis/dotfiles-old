@@ -47,10 +47,10 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # UPNEXT
 # export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home"
 
-export JRUBY_OPTS="-Xcompile.invokedynamic=false -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-noverify -Xcompile.mode=OFF"
-export GOPATH="$HOME/go"
-alias g='cd $GOPATH'
-export PATH=$PATH:$GOPATH/bin
+# export JRUBY_OPTS="-Xcompile.invokedynamic=false -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-noverify -Xcompile.mode=OFF"
+# export GOPATH="$HOME/go"
+# alias g='cd $GOPATH'
+# export PATH=$PATH:$GOPATH/bin
 
 # config dla casa
 # export JAVA_OPTS="-Dcas.config.filepath=/Users/kamilpluta/projects/dp/cas/config/appConfig.properties -Dcas.log.dirpath=/Users/kamilpluta/cas_logs/"

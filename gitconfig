@@ -14,8 +14,14 @@
 [http]
 	sslVerify = true
 [core]
-	excludesfile = /Users/kamilpluta/.gitignore_global
+	excludesfile = /Users/kamil/.gitignore_global
 	editor = subl -n -w
 [user]
 	name = Kamil Pluta
-	email = detfis@gmail.com
+	email = kamil.p@shedul.com
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

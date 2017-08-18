@@ -23,11 +23,13 @@ Pretty JSON
 Pretty YAML
 PyV8
 Rspec
+RoboCop
 Sass
 SCSS
 SublimeCodeIntel
 SublimeLinter
 SublimeLinter-contrib-elixirc
+SublimeLinter-contrib-eslint
 SublimeLinter-rubocop
 SublimeLinter-ruby
 Theme - Soda

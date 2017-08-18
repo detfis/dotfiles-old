@@ -61,3 +61,8 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # . $HOME/.asdf/asdf.sh
 # . $HOME/.asdf/completions/asdf.bash
+
+# Added by GraphLab Create Launcher v3.0.1
+export PATH="/Users/kamil/anaconda/bin:$PATH"
+# added by Anaconda2 4.4.0 installer
+export PATH="/Users/kamil/anaconda/bin:$PATH"

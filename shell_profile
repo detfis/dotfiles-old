@@ -63,10 +63,47 @@ export EDITOR=subl
 # export CURLOPT_SSLCERT=$HOME/cert.pem
 # export CURL_CA_BUNDLE=$HOME/cert.pem
 
-# . $HOME/.asdf/asdf.sh
-# . $HOME/.asdf/completions/asdf.bash
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
 
 # Added by GraphLab Create Launcher v3.0.1
 export PATH="/Users/kamil/anaconda/bin:$PATH"
 # added by Anaconda2 4.4.0 installer
 export PATH="/Users/kamil/anaconda/bin:$PATH"
+
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+export PATH
+
+# added by Anaconda3 5.0.1 installer
+export PATH="/Users/kamil/anaconda3/bin:$PATH"
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash
+. /Users/kamil/anaconda3/etc/profile.d/conda.sh
+
+
+[[ -s "$HOME/.kiex/scripts/kiex" ]] && source "$HOME/.kiex/scripts/kiex"
+# added by Anaconda3 2018.12 installer
+# >>> conda init >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$(CONDA_REPORT_ERRORS=false '/Users/kamil/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    \eval "$__conda_setup"
+else
+    if [ -f "/Users/kamil/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/kamil/anaconda3/etc/profile.d/conda.sh"
+        CONDA_CHANGEPS1=false conda activate base
+    else
+        \export PATH="/Users/kamil/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda init <<<
+
+
+for f in ~/elm-bash-completion/_*; do source $f; done
+
+export ERL_AFLAGS="-kernel shell_history enabled"

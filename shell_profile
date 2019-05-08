@@ -23,9 +23,16 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
+test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
+
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
+
 
 function color_my_prompt {
     local __user_and_host="\[\033[01;32m\]\u@\h"
@@ -46,64 +53,25 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 export EDITOR=subl
 
-# exports
-
-# UPNEXT
-# export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home"
-
-# export JRUBY_OPTS="-Xcompile.invokedynamic=false -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-noverify -Xcompile.mode=OFF"
-# export GOPATH="$HOME/go"
-# alias g='cd $GOPATH'
-# export PATH=$PATH:$GOPATH/bin
-
-# config dla casa
-# export JAVA_OPTS="-Dcas.config.filepath=/Users/kamilpluta/projects/dp/cas/config/appConfig.properties -Dcas.log.dirpath=/Users/kamilpluta/cas_logs/"
-
-# commented out ???
-# export CURLOPT_SSLCERT=$HOME/cert.pem
-# export CURL_CA_BUNDLE=$HOME/cert.pem
+# works form OTP 20 - saves console history
+export ERL_AFLAGS="-kernel shell_history enabled"
 
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
 
-# Added by GraphLab Create Launcher v3.0.1
-export PATH="/Users/kamil/anaconda/bin:$PATH"
-# added by Anaconda2 4.4.0 installer
-export PATH="/Users/kamil/anaconda/bin:$PATH"
+# exports
 
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
 
-# added by Anaconda3 5.0.1 installer
-export PATH="/Users/kamil/anaconda3/bin:$PATH"
-
-. $HOME/.asdf/asdf.sh
-
-. $HOME/.asdf/completions/asdf.bash
-. /Users/kamil/anaconda3/etc/profile.d/conda.sh
-
 
 [[ -s "$HOME/.kiex/scripts/kiex" ]] && source "$HOME/.kiex/scripts/kiex"
-# added by Anaconda3 2018.12 installer
-# >>> conda init >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$(CONDA_REPORT_ERRORS=false '/Users/kamil/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    \eval "$__conda_setup"
-else
-    if [ -f "/Users/kamil/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/kamil/anaconda3/etc/profile.d/conda.sh"
-        CONDA_CHANGEPS1=false conda activate base
-    else
-        \export PATH="/Users/kamil/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda init <<<
-
 
 for f in ~/elm-bash-completion/_*; do source $f; done
 
-export ERL_AFLAGS="-kernel shell_history enabled"
+export PATH="$HOME/bin:$PATH"
+
+export AWS_PROFILE=shedul-developer
+export PATH="/usr/local/opt/postgresql@10/bin:$PATH"

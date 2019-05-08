@@ -90,3 +90,12 @@ alias dkcr='dkc run --rm'
 alias dkcu='dkc up -d'
 alias dkcb='dkc build'
 alias dkcl='dkc logs -f --tail 200'
+
+# mac
+alias reset_audio="sudo killall coreaudiod"
+
+alias docker_remove_exited="docker ps -q -f 'status=exited' | xargs  docker rm"
+alias docker_remove_dangling="docker images -q -f 'dangling=true' | xargs docker rmi"
+
+alias clear_docker="docker_remove_exited && docker_remove_dangling"
+

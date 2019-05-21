@@ -56,8 +56,13 @@ export EDITOR=subl
 # works form OTP 20 - saves console history
 export ERL_AFLAGS="-kernel shell_history enabled"
 
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+if [ -f ~/.asdf/asdf.sh ]; then
+. ~/.asdf/asdf.sh
+fi
+if [ -f ~/.asdf/completions/asdf.bash ]; then
+. ~/.asdf/completions/asdf.bash
+fi
+
 
 # exports
 
@@ -69,7 +74,9 @@ export PATH
 
 [[ -s "$HOME/.kiex/scripts/kiex" ]] && source "$HOME/.kiex/scripts/kiex"
 
-for f in ~/elm-bash-completion/_*; do source $f; done
+if [ -d ~/elm-bash-completion ]; then
+    for f in ~/elm-bash-completion/_*; do source $f; done
+fi
 
 export PATH="$HOME/bin:$PATH"
 

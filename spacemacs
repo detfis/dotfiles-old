@@ -68,7 +68,6 @@ values."
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages '(
                                       format-all
-                                      yasnippet-snippets
                                       )
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -148,7 +147,7 @@ values."
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
    dotspacemacs-default-font '("Source Code Pro"
-                               :size 13
+                               :size 14
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -324,10 +323,15 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+
   (add-hook 'window-setup-hook #'neotree-find-project-root)
   (add-hook 'before-save-hook #'format-all-buffer)
   (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+  ;; ruby mode
   (add-hook 'ruby-mode-hook 'robe-mode)
+
+
   ;; do not create lockfiles (.#file_name)
   (setq create-lockfiles nil)
 
@@ -335,6 +339,8 @@ you should place your code here."
 
   (setq web-mode-content-types-alist '(("jsx" . "\\.js[x]?\\'")))
   (setq require-final-newline t)
+  ;; multiple cursors
+  (global-set-key (kbd "C-c m c") 'mc/edit-lines)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will

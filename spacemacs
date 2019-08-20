@@ -345,6 +345,9 @@ you should place your code here."
   (setq require-final-newline t)
   ;; multiple cursors
   (global-set-key (kbd "C-c m c") 'mc/edit-lines)
+
+  ;; display emojis
+  (add-hook 'after-init-hook #'global-emojify-mode)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will

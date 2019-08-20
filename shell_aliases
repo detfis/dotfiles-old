@@ -99,3 +99,5 @@ alias docker_remove_dangling="docker images -q -f 'dangling=true' | xargs docker
 
 alias clear_docker="docker_remove_exited && docker_remove_dangling"
 
+alias em="emacs"
+alias emc="emacsclient"

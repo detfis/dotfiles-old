@@ -23,8 +23,6 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
-test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
-
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
 fi
@@ -51,18 +49,12 @@ eval $(thefuck --alias)
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-export EDITOR=subl
+export EDITOR=emc
 
 # works form OTP 20 - saves console history
 export ERL_AFLAGS="-kernel shell_history enabled"
 
-if [ -f ~/.asdf/asdf.sh ]; then
-. ~/.asdf/asdf.sh
-fi
-if [ -f ~/.asdf/completions/asdf.bash ]; then
-. ~/.asdf/completions/asdf.bash
-fi
-
+test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
 
 # exports
 
@@ -72,8 +64,6 @@ PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
 
 
-[[ -s "$HOME/.kiex/scripts/kiex" ]] && source "$HOME/.kiex/scripts/kiex"
-
 if [ -d ~/elm-bash-completion ]; then
     for f in ~/elm-bash-completion/_*; do source $f; done
 fi
@@ -82,3 +72,6 @@ export PATH="$HOME/bin:$PATH"
 
 export AWS_PROFILE=shedul-developer
 export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
+
+# add elixir-ls to path
+export PATH="$HOME/elixir-ls:$PATH"

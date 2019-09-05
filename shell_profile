@@ -50,6 +50,7 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 export EDITOR=emc
+export ALTERNATE_EDITOR="subl -n -w"
 
 # works form OTP 20 - saves console history
 export ERL_AFLAGS="-kernel shell_history enabled"

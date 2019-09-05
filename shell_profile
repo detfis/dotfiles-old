@@ -54,8 +54,6 @@ export EDITOR=emc
 # works form OTP 20 - saves console history
 export ERL_AFLAGS="-kernel shell_history enabled"
 
-test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
-
 # exports
 
 # Setting PATH for Python 3.6
@@ -75,3 +73,5 @@ export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
 
 # add elixir-ls to path
 export PATH="$HOME/elixir-ls:$PATH"
+
+. /usr/local/opt/asdf/asdf.sh

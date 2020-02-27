@@ -1,2 +1,5 @@
 .ruby-version
 .ruby-gemset
+.elixir_ls/
+.yardoc/
+.vscode/

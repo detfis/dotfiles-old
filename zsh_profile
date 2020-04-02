@@ -74,6 +74,7 @@ plugins=(
     flutter
     history
     git
+    kafka
 )
 
 source $ZSH/oh-my-zsh.sh

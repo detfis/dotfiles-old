@@ -18,7 +18,7 @@
 	editor = subl -n -w
 [user]
 	name = Kamil Pluta
-	email = kamil.p@shedul.com
+	email = kamil.p@fresha.com
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
